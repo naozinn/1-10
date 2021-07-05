@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  width: 100%;
+}
+
 header {
   height: 50px;
   background-color: #ff9a4b;
@@ -12,15 +16,19 @@ header {
 main {
   width: 960px;
   margin: 50px auto;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .step-box {
-  width: 300px;
+  width: 90%;
   margin-right: 30px;
-  padding: 10px;
+  padding: 15px;
   position: relative;
   background-color: #eee;
+  margin-bottom: 20px;
+  border: 100%;
+  justify-content: center;
 }
 
 .step-box:last-child {
@@ -70,5 +78,22 @@ footer {
   header {
     width: 100%;
   }
-}
+  main {
+    width: 100%;
+    display: block;
+  }
 
+  .step-box {
+    width: 90%;
+    justify-content: center;
+    margin: 20px 5%;
+  }
+
+  title {
+    width: 100%;
+  }
+
+  .social {
+    display: none;
+  }
+}
